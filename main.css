@@ -1,0 +1,420 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+nav {
+    background: rgb(240, 235, 220);
+    padding: 0 40px;
+    display: block;
+    position: relative;
+    z-index: 101;
+}
+
+nav a {
+    font-family: usual, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+color: rgb(32, 32, 32);
+padding: 30px 10px;
+display: inline-block;
+text-decoration: none;
+text-align: center;
+}
+
+.subnav {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    background: rgb(83, 79, 68);
+    padding: 0 40px;
+    display: block;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.subnav a {
+    font-family: usual, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+color: white;
+padding: 30px 10px;
+display: inline-block;
+text-decoration: none;
+text-align: center;
+}
+
+.look-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.look-container.wide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.look-container .look {
+    display: block;
+    padding: 40px 20px;
+    text-decoration: none;
+}
+
+.look-container .look#mens {
+    background: linear-gradient(to top, black, transparent), url("https://images.unsplash.com/photo-1534369591007-df08d980047c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQwMzA0fQ&auto=format&fit=crop&w=1350&q=80");
+    background-position: center;
+    background-size: cover;
+}
+
+.look-container .look#womens {
+    background: linear-gradient(to top, black, transparent), url("https://images.unsplash.com/photo-1533992931871-28f779bc0675?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-position: center;
+    background-size: cover;
+}
+
+.look-container .look#kids {
+    background: linear-gradient(to top, black, transparent), url("https://images.unsplash.com/photo-1484665754804-74b091211472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-position:  center;
+    background-size: cover;
+}
+
+
+.look-container .look#youngmen {
+    background: linear-gradient(to top, black, transparent), url("https://images.unsplash.com/photo-1552578264-c4071606fd14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-position: center;
+    background-size: cover;
+}
+
+.look-container .look#youngwomen {
+    background: linear-gradient(to top, black, transparent), url("https://images.unsplash.com/photo-1554202413-28a60c0c2c3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-position: center;
+    background-size: cover;
+}
+
+.look-container .look .heading {
+    font-family: titling-gothic-fb-wide, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 18px;
+    margin-top: 380px;
+}
+
+.look-container .look .body {
+    font-family: poynter-oldstyle-display-con, serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 48px;
+}
+
+.look-container .look .link {
+    font-family: usual, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    font-size: 16px;
+}
+
+.steps {
+    display: block;
+    background: rgb(240, 235, 220);
+    padding: 60px 20px;
+}
+
+.steps.winter {
+    display: block;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("https://images.unsplash.com/photo-1550548726-37762815397f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1333&q=80");
+    background-position: center;
+    background-size: cover;
+    padding: 120px 20px;
+}
+
+.steps.stylist {
+    display: block;
+    background:  linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("https://images.unsplash.com/photo-1513373319109-eb154073eb0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background-position: center;
+    background-size: cover;
+    padding: 120px 20px;
+}
+
+.steps .intro {
+    font-family: titling-gothic-fb-wide, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+}
+
+.steps .label {
+    display: block;
+    font-family: poynter-oldstyle-display-con, serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(32, 32, 32);
+    font-size: 48px;
+}
+
+.steps .label.max-width {
+    max-width: 600px;
+}
+
+.steps a.link {
+    display: block;
+    font-family: usual, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(32, 32, 32);
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.intro_banner {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgb(32, 32, 32);
+    padding: 80px 20px;
+}
+
+.intro_banner .step-title {
+    font-family: poynter-oldstyle-display-con, serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro_banner .step {
+    font-family: usual, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.intro_banner .number {
+    display: inline-block;
+    font-family: titling-gothic-fb-wide, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px;
+    border: 2px white solid;
+    border-radius: 100px;
+    height: 47px;
+    width: 47px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    transform: translateX(-50%);
+    left: 50%;
+    position: relative;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background: rgb(240, 235, 220);
+    padding: 60px 20px 80px;
+    margin: 30px 0 0;
+}
+
+
+.footer .footer-row .footer-heading {
+    font-family: titling-gothic-fb-wide, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(32, 32, 32);
+    font-size: 24px;
+}
+
+.footer .footer-row a.link {
+    display: block;
+    font-family: usual, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(32, 32, 32);
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.shoe-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 80px 0;
+    background: rgb(240, 235, 220);
+}
+
+.shoe-container .shoe-image {
+    display: block;
+    background: url("https://images.pexels.com/photos/1698359/pexels-photo-1698359.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-position: center;
+    background-size: cover;
+    margin: 20px 30px 30px 20px;
+    box-shadow: 10px 10px 0 rgb(219, 135, 25); 
+    padding: 20px;
+    outline: rgb(22, 53, 73) 4px solid;
+    outline-offset: -20px;
+}
+
+.shoe-container .shoe-content {
+    padding: 120px 20px 120px 0;
+}
+
+.shoe-container .intro {
+    font-family: titling-gothic-fb-wide, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(219, 135, 25);
+    font-size: 32px;
+}
+
+.shoe-container .body {
+        display: block;
+        font-family: poynter-oldstyle-display-con, serif;
+        font-weight: 700;
+        font-style: normal;
+        color: rgb(32, 32, 32);
+        font-size: 64px;
+}
+
+.shoe-container .content-text {
+    font-family: usual, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(32, 32, 32);
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.shoe-container a.link {
+    display: block;
+    font-family: usual, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(32, 32, 32);
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+
+.intro_banner_light {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgb(240, 235, 220);
+    padding: 80px 20px;
+}
+
+.intro_banner_light .step-title {
+    font-family: poynter-oldstyle-display-con, serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(32, 32, 32);
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro_banner_light .step {
+    font-family: usual, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(32, 32, 32);
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.intro_banner_light .number {
+    display: inline-block;
+    font-family: titling-gothic-fb-wide, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px;
+    border: 2px rgb(32, 32, 32) solid;
+    border-radius: 100px;
+    height: 47px;
+    width: 47px;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(32, 32, 32);
+    transform: translateX(-50%);
+    left: 50%;
+    position: relative;
+}
+
+
+.intro_image {
+    display: block;
+    background: url("https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-position: left;
+    background-size: cover;
+    padding: 80px 20px;
+
+}
+
+.included-container {
+    display: block;
+    background: rgb(240, 235, 220);
+    padding: 40px 20px;
+    max-width: 480px;
+}
+
+.intro_image .step-title {
+    font-family: usual, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(32, 32, 32);
+    font-size: 16px;
+    margin: 8px 0 16px;
+}
+
+.step-title:last-of-type {
+    margin-bottom: 0;
+}
+
+.included-container hr {
+    display: block;
+    border: 1px rgb(138, 138, 138) solid;
+    margin: 10px 0 20px;
+}
+
+.intro_image .step {
+    font-family: poynter-oldstyle-display-con, serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(32, 32, 32);
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.intro_image .number {
+    display: inline-block;
+    font-family: titling-gothic-fb-wide, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 4px;
+    border: 2px rgb(32, 32, 32) solid;
+    border-radius: 100px;
+    height: 35px;
+    width: 35px;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(32, 32, 32);
+}
